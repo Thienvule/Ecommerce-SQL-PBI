@@ -78,8 +78,34 @@ ORDER BY month: sorts the rows by months of 2017
 - Review Customer Behavior: Look for shifts in user demographics, including geographic trends and returning vs. new customers.
 - Evaluate External Factors: Check for competitor actions, regional events, or economic patterns impacting customer behavior.
 
-### Query 02: Bounce Rate per Traffic Source in July 2017
+### Query 02: Bounce Rate per Traffic Source in 2017
 - Stakeholder: Chief Marketing Officer (CMO)
 - Problem: Observing high bounce rates from certain traffic sources raises concerns about the effectiveness of marketing campaigns.
-- Lead: To optimize our marketing strategies, it's essential to analyze the bounce rate for each traffic source in July 2017. This data will help identify which channels are underperforming and require adjustments to enhance user engagement.
+- Lead: To optimize our marketing strategies, it's essential to analyze the bounce rate for each traffic source in  2017. This data will help identify which channels are underperforming and require adjustments to enhance user engagement.
+
+#### Code:
+![image](https://github.com/user-attachments/assets/42d3a5d0-7dc3-4511-96d2-32c5e366d303)
+
+Code explanation:
+- `SELECT trafficSource.source`: This retrieves the source of traffic
+- SUM codes: `SUM(totals.visits) AS total_visits/SUM(totals.bounces) AS num_bounce`: Shows sources' visits and bounces
+- `ROUND(SUM(totals.bounces) * 100 / SUM(totals.visits), 2) AS bounce_rate`: Calculate bounce rates of each source
+
+#### Result
+![image](https://github.com/user-attachments/assets/cdf651d2-eba8-49b5-8e24-60159fefd66d)
+
+To gain deeper insights, I imported the data into Power BI and followed these steps:
+- Load the CSV File: Imported the CSV file from Google BigQuery into Power BI.
+- Format the Bounce Rate: Adjusted the bounce_rate column to display values as percentages with a simple DAX
+ ![image](https://github.com/user-attachments/assets/c2b53e1a-89e9-4684-9b83-e84669208492)
+
+- Visualize Data: Created a visualization highlighting the top 10 traffic sources with the highest bounce rates, filtered to include only those with the highest number of visits.
+![image](https://github.com/user-attachments/assets/a92f0f92-794d-4d9c-b228-0d74bb1c3ea7)
+
+Result
+![image](https://github.com/user-attachments/assets/1acf2421-e0cf-4005-822c-1000beea2411)
+
+#### Actionable insights
+=> From this chart, the CMO can direct her investigation towards the top 10 traffic sources that exhibit underperformance.
+
 
