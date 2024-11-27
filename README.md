@@ -199,12 +199,25 @@ Code Explanation:
 
 => It has been confirmed that March is an ideal starting point for our investigation.
 
-### Query 06: Average Amount Spent per Session by Purchasers in July 2017
-Stakeholder Context: Chief Financial Officer (CFO)
+### Query 06: Average Amount Spent per Session by Purchasers in  2017
+Stakeholder Context: Chief Financial Officer (CFO) and Chief Marketing Officer (CMO)
 
-Problem: Understanding expenditure patterns is vital for optimizing pricing strategies and promotions.
+Problem: Understanding expenditure patterns is vital for optimizing pricing strategies and promotions. Wonder if 
 
 Lead: To determine how much customers spend on average during their sessions, we'll calculate the average amount spent per session for purchasers in July 2017. This insight can identify pricing opportunities and promotional strategies.
+
+#### Code
+
+![image](https://github.com/user-attachments/assets/ee72bc98-9119-4df5-b54e-1a15bfd55ab9)
+Code explanation:
+-`SUM(totals.visits) AS total_visits`: This calculates the total number of visits across all sessions for each month.
+- `SUM(product.productRevenue) AS total_revenue`: This sums up the total revenue generated from product sales for each month.
+-  `SUM(product.productRevenue)/SUM(totals.visits) AS avg_revenue_per_visit`: This calculates the average revenue per visit by dividing the total revenue by the total number of visits.
+#### Result
+![image](https://github.com/user-attachments/assets/91904619-10b6-4777-8bd3-4c7ef9f17d93)
+![image](https://github.com/user-attachments/assets/91a45dd8-4599-4151-acda-3c2fff1ebbd9)
+![image](https://github.com/user-attachments/assets/b480243d-00fd-4bdc-befa-1b533ac5808d)
+![image](https://github.com/user-attachments/assets/0c8d7db4-ef6f-4409-b0f4-2e225a437ded)
 
 ### Query 07: Other Products Purchased by Customers of "YouTube Men's Vintage Henley" in July 2017
 Stakeholder Context: Product Manager
