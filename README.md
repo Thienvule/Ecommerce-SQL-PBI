@@ -215,16 +215,54 @@ Code explanation:
 -  `SUM(product.productRevenue)/SUM(totals.visits) AS avg_revenue_per_visit`: This calculates the average revenue per visit by dividing the total revenue by the total number of visits.
 #### Result
 ![image](https://github.com/user-attachments/assets/91904619-10b6-4777-8bd3-4c7ef9f17d93)
+
+While the positive correlation might lead us to believe that we should invest more in campaigns that drive higher views, a closer examination reveals a different story. 
+
 ![image](https://github.com/user-attachments/assets/91a45dd8-4599-4151-acda-3c2fff1ebbd9)
-![image](https://github.com/user-attachments/assets/b480243d-00fd-4bdc-befa-1b533ac5808d)
+
+April exhibited only one peak, while the other months showed stable performance. Furthermore, the total visits in April were not significantly higher than in other months and were even lower than some. ![image](https://github.com/user-attachments/assets/b480243d-00fd-4bdc-befa-1b533ac5808d)
+
+A clearer analysis indicates that the average revenue per visit in April was significantly higher.
+
 ![image](https://github.com/user-attachments/assets/0c8d7db4-ef6f-4409-b0f4-2e225a437ded)
 
-### Query 07: Other Products Purchased by Customers of "YouTube Men's Vintage Henley" in July 2017
+=> This suggests that visitors in April were likely more inclined to make high-value purchases, leading to increased average revenue per visit. This could also imply a higher quality of traffic or effective promotional strategies during April that encouraged significant spending from quality visitors. Therefore, identifying quality visitors can do our campaigns a huge favor.
+
+### Query 07: Other Products Purchased by Customers of "YouTube Men's Vintage Henley" in April 2017
 Stakeholder Context: Product Manager
 
-Problem: Identifying cross-selling opportunities enhances the product mix and boosts overall sales.
+Situation: The Product Manager enters the discussion and wants to know which products/product combinations worked best in April. He wants to identify cross-selling opportunities enhances the product mix and boosts overall sales.
 
-Lead: To effectively market related products, we will analyze the purchasing patterns of customers who bought the "YouTube Men's Vintage Henley" in July 2017, revealing other products frequently bought together. This insight drives cross-selling strategies.
+Task and Action: To effectively market related products, we will analyze the purchasing patterns of products bought in April 2017, driving cross-selling strategies.
+#### Code
+![image](https://github.com/user-attachments/assets/c288d99a-31e3-4c2c-81fe-14ee4127017d)
+In case we want to identify who was the best customers in April, this should be the code: 
+![image](https://github.com/user-attachments/assets/e839ab96-38f2-4f4d-9aff-e485dae97789)
+Most of the functions used in this code was explained earlier, which would not be redone this time.
+
+#### Result
+Products that excel in quantity versus those that generate high revenue
+![image](https://github.com/user-attachments/assets/d64f0141-3353-490a-867e-eff1860d36c5)
+
+=> Strategies for Products with High Sales Volume (Quantity)
+- Bundling Products: Offer bundled deals to encourage customers to purchase multiple items at a discounted rate. This can enhance the perceived value and increase the average transaction size.
+- Promotional Discounts: Implement regular promotions and discounts to encourage high-volume purchases. Limited-time offers can create urgency and drive quick sales.
+- Loyalty Programs: Establish a loyalty program that rewards customers for repeat purchases. Incentives can include points for each purchase that can be redeemed for discounts or free products.
+- Cross-Selling and Upselling: Use personalized product recommendations at checkout. Encouraging customers to purchase complementary items can increase the overall quantity sold.
+- Social Proof and Reviews: Highlight customer reviews and testimonials. Social proof can influence potential buyers to choose high-selling items.
+- Effective Merchandising: Use eye-catching displays or website layouts to promote high-quantity items. Positioning popular items prominently can attract more attention and drive sales.
+- Targeted Marketing:Utilize data analytics to identify customer preferences and market directly to segments that purchase frequently. Tailored email campaigns can boost engagement.
+=> Strategies for Products with High Revenue
+- Premium Positioning: Position high-revenue products as premium offerings. Highlight quality, exclusivity, and unique features to justify higher price points.
+- Enhanced Customer Experience: Provide exceptional customer service and support. High-value purchasers often expect a higher level of interaction and assistance.
+- Personalized Marketing: Use data to personalize marketing efforts for high-revenue products. This includes targeted ads, personalized emails, and tailored content.
+- Bundling with Low-Cost Items: Bundle high-value products with low-cost items to enhance perceived value. This can encourage buyers to consider purchasing the higher-priced product.
+- Content Marketing: Create detailed content (e.g., how-to videos, blogs) that highlights the benefits and use cases of the high-revenue products. This can educate customers and inspire them to purchase.
+- Seasonal Promotions: Time promotions around special occasions or seasonal changes that align with high-value products. Creating a sense of urgency can encourage purchases.
+- Targeted Upselling: During the purchasing process, offer upsells on complementary high-revenue items. Make it easy for customers to consider additional purchases
+
+Another move we should make is to approach our best customers with loyal programs and the like at the time:
+![image](https://github.com/user-attachments/assets/75491a03-cd2b-45f8-8661-862eee63aa39)
 
 ### Query 08: Cohort Map from Product View to Add to Cart to Purchase in Q1 2017
 Stakeholder Context: User Experience (UX) Designer / Chief Financial Officer (CFO)
