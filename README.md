@@ -1,5 +1,4 @@
-# TrendyGear ecommerce
-Using SQL to answer business questions from an ecommerce dataset
+# E-commerce Sales Decline Analysis: Reversing Trends with Advanced SQL and Power BI Visualization
 ## Understanding the data
 Dataset details: View here
 The dataset includes fields with the "RECORD" datatype, which requires a deeper understanding. In databases like Google BigQuery, a RECORD (often referred to as a struct or nested field) is a complex data type that allows for the grouping of multiple fields into a single entity. This capability is beneficial for organizing related data that can be treated as a cohesive unit.
@@ -8,6 +7,8 @@ It's important to note that while some arrays may not be explicitly labeled as "
 
 ## Context Summary
 Current time: September 2017
+August's performance was notably poor, with a decline becoming evident since the second quarter. The stakeholders at TrendyGear are eager to explore strategies that could help reverse this trend.
+
 ### Company Overview
 Company Name: TrendyGear
 - Industry: E-commerce specializing in lifestyle, fashion, and tech accessories.
