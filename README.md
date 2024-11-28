@@ -264,9 +264,29 @@ Products that excel in quantity versus those that generate high revenue
 Another move we should make is to approach our best customers with loyal programs and the like at the time:
 ![image](https://github.com/user-attachments/assets/75491a03-cd2b-45f8-8661-862eee63aa39)
 
-### Query 08: Cohort Map from Product View to Add to Cart to Purchase in Q1 2017
-Stakeholder Context: User Experience (UX) Designer / Chief Financial Officer (CFO)
+### Query 08: Cohort Map from Product View to Add to Cart to Purchase in April 2017
+Stakeholder Context: CMO, CFO, and Product Manager
 
-Problem: Understanding user behavior from product views to purchases aids in funnel optimization.
+Situation: The chiefs want to understand user (in April especially) behavior from product views to purchases aids in funnel optimization.
 
-Lead: To visualize the journey from product views to purchases through a cohort map, we will analyze the conversion rates at each step in January, February, and March 2017. This will help in understanding the efficacy of the purchase funnel and informing strategies to reduce drop-offs.
+Task: To visualize the journey from product views to purchases through a cohort map, we will analyze the conversion rates at each step in January, February, and March 2017. This will help in understanding the efficacy of the purchase funnel and informing strategies to reduce drop-offs.
+
+#### Code:
+![image](https://github.com/user-attachments/assets/8feb5aed-7052-4cf9-9e4a-231d49b679db)
+
+Code explanation:
+- Product Views: Counts instances of product views (action type 2).
+- Add to Cart: Counts instances of products added to the cart (action type 3).
+- Remove from Cart: Counts instances where products were removed from the cart (action type 4).
+- Refunds: Counts instances of refunds (action type 7).
+- Purchases: Counts instances of completed purchases where revenue is recorded (action type 6).
+- Total Revenue: Sums the revenue from products sold.
+- Main Query: Calculates add to cart and purchase rate by dividing these metrics by product views.
+
+#### Result
+![image](https://github.com/user-attachments/assets/d55e38e6-a22e-4969-afe3-3eeb72ad7c26)
+
+The table indicates that there is little difference between the add-to-cart and purchase rates, yet the revenue of April significantly rose. Therefore, investigating these customers and identifying the best-selling products in April could provide valuable insights.
+
+![image](https://github.com/user-attachments/assets/12f5b05e-cd3c-464c-96d3-8c421b9cec74)
+
