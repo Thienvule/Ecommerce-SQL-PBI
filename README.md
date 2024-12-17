@@ -1,9 +1,6 @@
 # E-commerce Sales Decline Analysis: Reversing Trends with Advanced SQL and Power BI Visualization
-## Understanding the data
-Dataset details: View here
-The dataset includes fields with the "RECORD" datatype, which requires a deeper understanding. In databases like Google BigQuery, a RECORD (often referred to as a struct or nested field) is a complex data type that allows for the grouping of multiple fields into a single entity. This capability is beneficial for organizing related data that can be treated as a cohesive unit.
 
-It's important to note that while some arrays may not be explicitly labeled as "ARRAY" in the schema description, their repetitive structure indicates that they function as arrays. This distinction highlights the need to interpret the data schema carefully, as the presence of repeating records indicates nested or array-like behavior even when not explicitly shown.
+
 
 ## Context Summary
 Current time: September 2017
@@ -15,6 +12,13 @@ August's performance at TrendyGear was notably poor, marking a decline that beca
 - Understanding Customer Journey: There is a growing imperative to understand the customer journey from product view to purchase. Stakeholders are particularly concerned with ensuring that the drop-off rates between these stages are minimized, highlighting a need for robust cohort analysis.
 - Maximizing Revenue Potential: Given the competitive landscape of e-commerce, stakeholders are motivated to maximize revenue potential through strategic product placements, effective cross-selling, and upselling based on user behavior.
 - User Segmentation for Tailored Strategies: The need to segment users into groups (purchasers vs. non-purchasers) is essential for creating targeted marketing strategies. This segmentation is crucial for understanding different engagement patterns and optimizing the user experience accordingly.
+  
+## Understanding the data
+
+![image](https://github.com/user-attachments/assets/e2c68b4e-0b4a-42bd-929c-31b82c43b1e2)
+
+The dataset includes fields with the "RECORD" datatype, which requires a deeper understanding. In databases like Google BigQuery, a RECORD (often referred to as a struct or nested field) is a complex data type that allows for the grouping of multiple fields into a single entity. This capability is beneficial for organizing related data that can be treated as a cohesive unit.
+It's important to note that while some arrays may not be explicitly labeled as "ARRAY" in the schema description, their repetitive structure indicates that they function as arrays. This distinction highlights the need to interpret the data schema carefully, as the presence of repeating records indicates nested or array-like behavior even when not explicitly shown.
 
 ## Queries
 Table to be feched: FROM `bigquery-public-data.google_analytics_sample.ga_sessions_2017*`
