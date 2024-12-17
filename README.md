@@ -4,6 +4,7 @@
 
 ## Context Summary
 Current time: September 2017
+
 August's performance at TrendyGear was notably poor, marking a decline that became evident in the second quarter. Recognizing the urgency to reverse this downward trend, the stakeholders are eager to explore effective strategies. To facilitate this discussion, they have included me, their data analyst, in the meeting to address some of the ad-hoc requests. My role will be to query immediate data, providing insights that will help guide our decision-making process.
 
 ### Problems Leading to Analysis Requests
