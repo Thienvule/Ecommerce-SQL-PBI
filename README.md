@@ -7,31 +7,7 @@ It's important to note that while some arrays may not be explicitly labeled as "
 
 ## Context Summary
 Current time: September 2017
-August's performance was notably poor, with a decline becoming evident since the second quarter. The stakeholders at TrendyGear are eager to explore strategies that could help reverse this trend.
-
-### Company Overview
-Company Name: TrendyGear
-- Industry: E-commerce specializing in lifestyle, fashion, and tech accessories.
-- Vision: To be a leading online destination for trendy products that resonate with a modern, urban lifestyle, offering customers a seamless shopping experience.
-- Mission: To provide high-quality, curated products while leveraging data-driven insights to enhance customer satisfaction and drive sales growth.
-
-### Stakeholders
-Chief Marketing Officer (CMO):
-- Concern: The CMO is focused on understanding the effectiveness of various marketing channels and their contributions to overall revenue. High bounce rates from specific traffic sources raise concerns about campaign effectiveness and messaging alignment.
-- Request: Understand the current performance and wish to analyze bounce rates by traffic source to identify underperforming areas and optimize marketing strategies.
-
-Product Manager:
-- Concern: The Product Manager is interested in understanding customer behavior regarding specific items, such as the "YouTube Men's Vintage Henley." Insights into related purchases and average spend per session can inform product recommendations and inventory decisions.
-- Request: Identify cross-selling opportunities and analyze average transactions and spending behavior among purchasers.
-
-Chief Financial Officer (CFO):
-- Concern: The CFO is focused on financial performance metrics, including revenue generation and cost efficiencies. Understanding which channels generate the most revenue and having a clear understanding of customer purchasing behaviors are essential for budgeting and forecasting.
-- Request: Examine revenue by traffic source and overall monthly trends in transactions and pageviews, along with cost per acquisition metrics.
-
-User Experience (UX) Designer:
-- Concern: The UX Designer aims to improve website engagement and reduce bounce rates. Understanding how different user segments (purchasers vs. non-purchasers) interact with the site can lead to better design decisions.
-- Request: Analyze average pageviews by purchaser type to enhance the experience for non-purchasers to encourage them toward conversion.
-
+August's performance at TrendyGear was notably poor, marking a decline that became evident in the second quarter. Recognizing the urgency to reverse this downward trend, the stakeholders are eager to explore effective strategies. To facilitate this discussion, they have included me, their data analyst, in the meeting to address some of the ad-hoc requests. My role will be to query immediate data, providing insights that will help guide our decision-making process.
 
 ### Problems Leading to Analysis Requests
 - Declining Engagement Metrics: Stakeholders have observed a decline in user engagement metrics, such as increased bounce rates across certain traffic sources. This has led to concerns about the effectiveness of current marketing campaigns and the relevance of the landing pages.
@@ -43,7 +19,7 @@ User Experience (UX) Designer:
 ## Queries
 Table to be feched: FROM `bigquery-public-data.google_analytics_sample.ga_sessions_2017*`
 ### Query 01: Monthly Metrics for 2017
-- Stakeholder Context: All
+- Stakeholder: All
 - Problem: All stakeholders want to undestand overall business performance and identifying trends in traffic and conversions from the start of the year as they all felt that something is getting worse.
 - Task to be done: To establish a solid baseline for performance and understand customer engagement from the start of the year to now, we will analyze the total visits, pageviews, and transactions from Jan to Aug 2017. This will help track any fluctuations and identify patterns that need addressing.
 #### Code:
