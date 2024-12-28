@@ -1,5 +1,4 @@
-# E-commerce Sales Decline Analysis: Reversing Trends with Advanced SQL and Power BI Visualization
-
+# Ecommerce | Ad-hoc requests | SQL
 
 
 ## Context Summary
